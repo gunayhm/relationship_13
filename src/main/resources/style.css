@@ -1,0 +1,21 @@
+/* CSS for styling the table */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-bottom: 200px;
+}
+
+th, td {
+    border: 1px dotted #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+td.color-red{
+    color: yellow;
+}
+
+
+th {
+    background-color: #f2f2f2;
+}
