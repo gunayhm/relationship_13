@@ -30,8 +30,6 @@ public class Person {
     private String name;
 
     @OneToMany(mappedBy = "person", cascade = CascadeType.ALL)
-    @LazyCollection(LazyCollectionOption.EXTRA)
-    @OrderColumn(name = "id")
     private List<Account> accounts = new ArrayList<>();
 
 }

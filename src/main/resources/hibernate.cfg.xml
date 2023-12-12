@@ -16,19 +16,11 @@
         <property name="format_sql">true</property>
         <property name="hbm2ddl.auto">update</property>
 
-        <property name="hibernate.cache.use_second_level_cache">true</property>
-        <property name="hibernate.cache.region.factory_class">
-            org.hibernate.cache.ehcache.EhCacheRegionFactory
-        </property>
-
-        <!-- Specify other caching-related properties -->
-        <property name="hibernate.cache.use_query_cache">true</property>
-
         <mapping class="org.example.oneToOne.User"/>
-<!--        <mapping class="org.example.oneToOne.Address"/>-->
-        <mapping class="org.example.oneToMany.Account"/>
-        <mapping class="org.example.oneToMany.Person"/>
-        <mapping class="org.example.manyToMany.Employee"/>
-        <mapping class="org.example.manyToMany.Task"/>
+        <mapping class="org.example.oneToOne.Address"/>
+<!--        <mapping class="org.example.oneToMany.Account"/>-->
+<!--        <mapping class="org.example.oneToMany.Person"/>-->
+<!--        <mapping class="org.example.manyToMany.Employee"/>-->
+<!--        <mapping class="org.example.manyToMany.Task"/>-->
     </session-factory>
 </hibernate-configuration>
